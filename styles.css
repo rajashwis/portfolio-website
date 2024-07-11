@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+:root {
+  --primary-color: #05026e;
+  --primary-color-dark: #000000;
+  --text-dark: #000000;
+  --text-light: #767268;
+  --extra-light: #ffffff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--extra-light);
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  padding: 2rem;
+  margin: 1rem; /* Added margin to ensure space around the container */
+  display: grid;
+  gap: 2rem;
+  color: var(--text-dark);
+  border: 2px solid var(--primary-color);
+  /* border-radius: 10px; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: var(--extra-light);
+}
+
+.image {
+  text-align: center;
+}
+
+.image img {
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+}
+
+.image a {
+  display: block;
+  margin-top: 3px;
+  font-size: 0.9rem;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.image a:hover {
+  text-decoration: underline;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  text-align: center;
+  margin-top: -1rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer p {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: -1rem;
+}
+
+.footer button {
+  padding: 1rem;
+  outline: none;
+  border: none;
+  /* border-radius: 5px; */
+  color: var(--extra-light);
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer button:hover {
+  background-color: var(--primary-color-dark);
+}
+
+@media (min-width: 350px) {
+  .container {
+    max-width: 320px;
+  }
+  .image img {
+    max-width: 300px;
+  }
+  .image a {
+    font-size: 0.6rem;
+  }
+  .header h1 {
+    font-size: 2rem;
+  }
+  .footer button {
+    font-size: 0.5rem;
+  }
+}
+
+@media (min-width: 640px) {
+  body {
+    padding: 50px;
+    margin: 0;
+  }
+  .container {
+    max-width: 600px;
+  }
+  .image img {
+    max-width: 500px;
+  }
+  .header h1 {
+    font-size: 5rem;
+  }
+  .footer button {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 800px;
+  }
+  .image img {
+    max-width: 700px;
+  }
+  .image a {
+    font-size: 0.9rem;
+  }
+  .header h1 {
+    font-size: 6rem;
+  }
+  .footer button {
+    font-size: 1rem;
+  }
+}
