@@ -92,7 +92,7 @@ body {
   outline: none;
   border: none;
   /* border-radius: 5px; */
-  color: var(--extra-light);
+  color: #26ee44;
   font-size: 1rem;
   font-weight: 600;
   background-color: var(--primary-color);
@@ -102,6 +102,26 @@ body {
 
 .footer button:hover {
   background-color: var(--primary-color-dark);
+}
+
+.social-links {
+  margin-top: 9px;
+  display: flex;
+  gap: 2rem;
+}
+
+.social-link {
+  color: var(--primary-color-dark);
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.social-link i {
+  margin-right: 0.5rem;
+}
+
+.social-link:hover {
+  color: #26ee44;
 }
 
 @media (min-width: 350px) {
